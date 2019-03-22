@@ -1,0 +1,242 @@
+
+*:visited,*:active{
+  color:inherit
+}
+@media (min-width: 700px){
+:root {
+    --font-scale-xl: 1.35;
+}
+}
+
+@media (min-width: 700px){
+:root {
+    --font-size: 21px;
+    --font-lineheight: 34px;
+}
+}
+:root {
+  --c-bg: hsl(1, 17%, 95%);
+  --c-text: hsl(0, 15%, 55%);
+  --font-size: 20px;
+  --font-family: 'Julius Sans One', sans-serif;
+  --font-lineheight: 26px;
+  --font-weight: 400;
+  --font-style: normal;
+  --font-scale-xs: 0.79;
+  --font-scale-s: 0.889;
+  --font-scale-m: 1.125;
+  --font-scale-l: 1.226;
+  --font-scale-xl: 1.5;
+  --font-scale-xxl: 3;
+  --l-regular: 24rem;
+  --l-wide: 36rem;
+  --l-archive: 37rem;
+  --l-archive-wide: 57rem;
+  --l-text: 19rem;
+  font-size: var(--font-lineheight);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  background: var(--c-bg);
+  color: var(--c-text);
+}
+
+body,html{
+  width:100%;
+  height:100%
+}
+body *,html *{
+  font-size:var(--font-size);
+  letter-spacing:0.05em
+}
+body{
+  overflow:auto;
+
+}
+h1 {
+  font-weight: 100 !important;
+}
+.opening{
+  width:100%;
+  height:100%;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  position:relative
+}
+.opening::before,.opening::after{
+  content:"";
+  display:block;
+  width:90%;
+  height:35%;
+  position:absolute;
+  background-size:contain;
+  background-repeat:no-repeat;
+  left:0;
+  right:0;
+  margin:0 auto
+}
+.opening::before{
+  background-position:center bottom;
+  top:5vmin;
+  background-image:url("img/illustration_1.png")
+}
+.opening::after{
+  background-position:center top;
+  bottom:5vmin;
+  background-image:url("img/illustration_2.png")
+}
+.opening-title{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  text-align:center;
+  margin:auto;
+  font-family:var(--font-serif);
+  font-size:10vmin;
+  font-weight: 100;
+}
+.opening-title span{
+  display:inline;
+  font-size:inherit;
+  letter-spacing:0.2em
+}
+.opening-title span:nth-child(2){
+  margin:0 .3em
+}
+.text{
+  text-align:center;
+  text-transform:uppercase;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  padding:0 1rem;
+  line-height: 1.5;
+}
+@media (min-width: 700px){
+  .text{
+      margin-top:3rem;
+      margin-bottom:3rem
+  }
+}
+.text .optional br{
+  display:none
+}
+@media (min-width: 1000px){
+  .text .optional br{
+      display:initial
+  }
+}
+.text p:not(:last-child){
+  margin-bottom:1rem
+}
+.opening+.text{
+  margin-top:0
+}
+@media (min-width: 700px){
+  .opening+.text{
+      margin-top:4rem
+  }
+}
+.text-xxl{
+  font-size:calc(var(--font-size) * var(--font-scale-xxl));
+  line-height:1.2rem;
+  letter-spacing:0.1em;
+  letter-spacing:0.1em
+}
+.text-big{
+  font-size:calc(var(--font-size) * var(--font-scale-xl));
+  line-height:1.2rem;
+  letter-spacing:0.1em;
+  letter-spacing:0.1em
+}
+.text-big:not(:last-child){
+  margin-bottom:.5rem
+}
+.text a{
+  background:-webkit-linear-gradient(bottom, var(--c-text) 1px, transparent 1px);
+  background:linear-gradient(to top, var(--c-text) 1px, transparent 1px);
+  background-size:0% 100%;
+  background-repeat:no-repeat;
+  background-position:center center;
+  -webkit-transition-property:color, background-size;
+  transition-property:color, background-size;
+  -webkit-transition-duration:300ms;
+  transition-duration:300ms;
+  -webkit-transition-timing-function:ease-in-out;
+  transition-timing-function:ease-in-out
+}
+.text a:hover{
+  background-size:100% 100%
+}
+.date{
+  margin-top:4rem;
+  margin-bottom:3rem;
+  padding:0 1rem
+}
+.date-image{
+  display:block;
+  width:100%;
+  height:auto
+}
+@media (min-width: 500px){
+  .date-image{
+      height:2rem;
+      width:auto;
+      margin:0 auto
+  }
+}
+.date-caption{
+  position:absolute;
+  top:-999999px;
+  left:-999999px
+}
+.illustration-container{
+  max-width:22rem;
+  margin:2rem auto;
+  padding:0 1rem
+}
+@media (min-width: 700px){
+  .illustration-container{
+      margin:4rem auto
+  }
+}
+.illustration-container-small{
+  max-width:16rem
+}
+.illustration-container-final{
+  max-width:8rem;
+  margin-bottom:0;
+  padding-bottom:2rem
+}
+@media (min-width: 700px){
+  .illustration-container-final{
+      padding-bottom:4rem
+  }
+}
+.illustration{
+  display:block;
+  width:100%;
+  height:auto
+}
+
+.date {
+  font-family: 'Raleway', sans-serif;
+}
+.text-travel {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.bottom {
+  margin-top: 0px;
+  padding-left: 4rem;
+}
+.last {
+  margin-bottom: -10px;
+}
+.img-top {
+  margin-bottom: 0px;
+  padding-right: 15%;
+}
+.p-top {
+  margin-top:-2%;
+}
