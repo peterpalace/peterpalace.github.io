@@ -46,10 +46,15 @@ body,html{
 }
 body *,html *{
   font-size:var(--font-size);
-  letter-spacing:0.05em
+  letter-spacing:0.05em;
 }
 body{
   overflow:auto;
+  font-family: var(--font-family);
+  background: var(--c-bg);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  color: var(--c-text);
 
 }
 h1 {
@@ -77,12 +82,12 @@ h1 {
 }
 .opening::before{
   background-position:center bottom;
-  top:5vmin;
+  top:2vmin;
   background-image:url("img/illustration_1.png")
 }
 .opening::after{
   background-position:center top;
-  bottom:5vmin;
+  bottom:2vmin;
   background-image:url("img/illustration_2.png")
 }
 .opening-title{
@@ -92,7 +97,7 @@ h1 {
   text-align:center;
   margin:auto;
   font-family:var(--font-serif);
-  font-size:10vmin;
+  font-size:9vmin;
   font-weight: 100;
 }
 .opening-title span{
@@ -238,4 +243,18 @@ h1 {
 }
 .p-top {
   margin-top:-2%;
+}
+#chartdiv {
+  /*width: 60%;*/
+  height: 500px;
+}
+.map-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#mapimg {
+  width: 60%;
+  height: 30%;
 }
